@@ -1,0 +1,100 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": [
+	
+	],
+  "provider": {
+    "volcengine": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "volcengine",
+      "options": {
+        "baseURL": "https://ark.cn-beijing.volces.com/api/coding/v3",
+        "apiKey": "YOUR_API_KEY_HERE"
+      },
+      "models": {
+        "ark-code-latest": {
+          "name": "ark-code-latest"
+        },
+        "kimi-k2.5": {
+          "name": "kimi-k2.5",
+          "modalities": {
+            "input": ["text", "image"],
+            "output": ["text"]
+          },
+          "options": {
+            "thinking": {
+              "type": "enabled"
+            }
+          }
+        },
+        "glm-4.7": {
+           "name": "glm-4.7",
+           "modalities": {
+             "input": ["text"],
+             "output": ["text"]
+           },
+           "options": {
+             "thinking": {
+               "type": "enabled"
+             }
+           }
+         },
+         "minimax-m2.5": {
+           "name": "minimax-m2.5",
+           "modalities": {
+             "input": ["text"],
+             "output": ["text"]
+           },
+           "options": {
+             "thinking": {
+               "type": "enabled"
+             }
+           }
+         },
+         "doubao-seed-2.0-code": {
+           "name": "doubao-seed-2.0-code",
+           "modalities": {
+             "input": ["text", "image"],
+             "output": ["text"]
+           },
+           "options": {
+             "thinking": {
+               "type": "enabled"
+             }
+           }
+         },
+          "doubao-seed-2.0-lite": {
+            "name": "doubao-seed-2.0-lite",
+            "modalities": {
+              "input": ["text", "image"],
+              "output": ["text"]
+            }
+          },
+         "doubao-seed-2.0-pro": {
+           "name": "doubao-seed-2.0-pro",
+           "modalities": {
+             "input": ["text", "image"],
+             "output": ["text"]
+           },
+           "options": {
+             "thinking": {
+               "type": "enabled"
+             }
+           }
+         },
+         "deepseek-v3.2": {
+           "name": "deepseek-v3.2",
+           "modalities": {
+             "input": ["text"],
+             "output": ["text"]
+           },
+           "options": {
+             "thinking": {
+               "type": "enabled"
+             }
+           }
+         }
+      }
+    }
+  }
+}
